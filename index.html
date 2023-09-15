@@ -9,20 +9,21 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     />
-    <!-- Link to Bootstrap 3rd Party API -->
+    <!-- Link to Font Awesome 3rd Party API -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <!-- Link to Font Awesome 3rd Party API -->
+    <!-- Link to Google Fonts 3rd Party API -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
     <!-- Link to style.css file in repo -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Page Meta Title -->
     <title>Work Day Scheduler</title>
   </head>
 
@@ -70,13 +71,65 @@
         </button>
       </div>
 
+      <div id="hour-12" class="row time-block future">
+        <div class="col-2 col-md-1 hour text-center py-3">12PM</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div id="hour-13" class="row time-block future">
+        <div class="col-2 col-md-1 hour text-center py-3">1PM</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div id="hour-14" class="row time-block future">
+        <div class="col-2 col-md-1 hour text-center py-3">2PM</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div id="hour-15" class="row time-block future">
+        <div class="col-2 col-md-1 hour text-center py-3">3PM</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div id="hour-16" class="row time-block future">
+        <div class="col-2 col-md-1 hour text-center py-3">4PM</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div id="hour-17" class="row time-block future">
+        <div class="col-2 col-md-1 hour text-center py-3">5PM</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    <!-- Embed JQuery in body -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      
+    <!-- Embed DayJS in body-->
     <script
       src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
       integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
       crossorigin="anonymous"
     ></script>
-
+    
+    <!-- Embed script.js in body-->
     <script src="script.js"></script>
   </body>
 </html>
