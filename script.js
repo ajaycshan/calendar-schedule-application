@@ -1,7 +1,13 @@
 
 // TODO: Declaring variables
+var currentDayEl = $('#currentDay')
 
-// TODO: Display current date - Code to display current date in header of page
+var today = dayjs()
+var currentDate = today.format('dddd D MMMM, YYYY')
+var currentHour = today.format('H')
+
+// Display current day at top of calendar
+currentDayEl.text(currentDate);
 
 // TODO: Colour-code past, present, future - 
 
