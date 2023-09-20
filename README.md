@@ -12,8 +12,8 @@ The purpose of this project is to create a calendar schedule application which a
 - Ensure saved event persists upon refreshing page
 
 ## Webpage Preview
-![Webpage Screenshot 1](calendar-schedule-1.png)
-![Webpage Screenshot 2](calendar-schedule-2.png)
+![Webpage Screenshot 1](images/calendar-schedule-1.png)
+![Webpage Screenshot 2](images/calendar-schedule-2.png)
 
 ## Link to Deployed Application
 [Deployed Webpage](https://ajaycshan.github.io/password-generator/)
