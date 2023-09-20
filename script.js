@@ -11,7 +11,7 @@ var currentHour = today.format('H')
 // Display current day at top of calendar
 currentDayEl.text(currentDate);
 
-// TODO: Colour-code past, present, future
+// Colour-code past, present, future
 for ( var i = 0; i < textareaEls.length; i++) {
     var indivTextareaEl = textareaEls[i];
     colourCode();
@@ -20,7 +20,6 @@ for ( var i = 0; i < textareaEls.length; i++) {
 function colourCode() {
     // Ensures consistent datatypes
     var calHour = parseInt(indivTextareaEl.dataset.hour);
-    console.log(calHour)
     if (currentHour > calHour) {
         // Adds 'past' class to textarea element for specific hour
         indivTextareaEl.classList.add('past')
