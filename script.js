@@ -2,6 +2,7 @@
 // TODO: Declaring variables
 var currentDayEl = $('#currentDay')
 var textareaEls = $('textarea')
+var saveIcons = $('.fas')
 
 
 var today = dayjs()
@@ -32,7 +33,19 @@ function colourCode() {
 }
 
 // TODO: Saving events to local storage
+// console.log(saveIcons[0].parentElement.parentElement.children[1])
+function saveEventEntry(event) {
+    // event.preventDefault();
+    var clickedButton = $(event.target);
+    var entryTime = clickedButton.parentElement
+    // var selectedTextarea = clickedButton.parentElement.parentElement.children[1];
+    // var entryDetails = selectedTextarea.val()
+
+    // localStorage.setItem(entryTime, JSON.stringify(entryDetails))
+    console.log(entryTime)
+}
 // Listener for click events on save button
+saveIcons.on('click', saveEventEntry)
 
 // TODO: Persistence of results following refresh for given day
 
