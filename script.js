@@ -54,7 +54,9 @@ function displayExisting() {
     }
 }
 
-// TODO: Clear local storage and reset calendar display when starting new day
-
+// Clear local storage and reset calendar at the end of each day
+if (currentHour > 17) {
+    localStorage.clear()
+}
 
   
