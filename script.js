@@ -32,17 +32,15 @@ function colourCode() {
     };
 }
 
-// TODO: Saving events to local storage
-// console.log(saveIcons[0].parentElement.parentElement.children[1])
+// Saving events to local storage
 function saveEventEntry(event) {
-    // event.preventDefault();
+    event.preventDefault();
     var clickedButton = $(event.target);
     var entryBlock = clickedButton.closest('.time-block');
     var entryTime = entryBlock.attr('id');
     var entryDetails = entryBlock.children().eq(1).val();
 
     localStorage.setItem(entryTime, JSON.stringify(entryDetails));
-    console.log(entryTime)
 }
 // Listener for click events on save icons
 saveIcons.on('click', saveEventEntry)
