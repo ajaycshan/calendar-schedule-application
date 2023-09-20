@@ -37,8 +37,9 @@ function colourCode() {
 function saveEventEntry(event) {
     // event.preventDefault();
     var clickedButton = $(event.target);
-    var entryTime = clickedButton.closest('.time-block').attr('id');
-    var entryDetails = clickedButton.closest('.time-block').children().eq(1).val();
+    var entryBlock = clickedButton.closest('.time-block')
+    var entryTime = entryBlock.attr('id');
+    var entryDetails = entryBlock.children().eq(1).val();
 
     // localStorage.setItem(entryTime, JSON.stringify(entryDetails))
     console.log(entryDetails)
