@@ -16,8 +16,7 @@ currentDayEl.text(currentDate);
 for ( var i = 0; i < textareaEls.length; i++) {
     var indivTextareaEl = textareaEls[i];
     colourCode();
-    console.log(indivTextareaEl.parentElement.id)
-    // displayExisting();
+    displayExisting();
 }
 
 function colourCode() {
@@ -47,12 +46,14 @@ function saveEventEntry(event) {
 // Listener for click events on save icons
 saveIcons.on('click', saveEventEntry)
 
-// TODO: Persistence of results following refresh for given day
-// function displayExisting() {
-//     var existingEvents = JSON.parse(localStorage.getItem())
-// }
+// Persistence of results following refresh for given day
+function displayExisting() {
+    var existingEvent = JSON.parse(localStorage.getItem(indivTextareaEl.parentElement.id))
+    if (existingEvent !== null) {
+        indivTextareaEl.textContent = existingEvent
+    }
+}
 
-// console.log(indivTextareaEl)
 // TODO: Clear local storage and reset calendar display when starting new day
 
 
