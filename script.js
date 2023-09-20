@@ -37,12 +37,11 @@ function colourCode() {
 function saveEventEntry(event) {
     // event.preventDefault();
     var clickedButton = $(event.target);
-    var entryTime = clickedButton.parentElement
-    // var selectedTextarea = clickedButton.parentElement.parentElement.children[1];
-    // var entryDetails = selectedTextarea.val()
+    var entryTime = clickedButton.closest('.time-block').attr('id');
+    var entryDetails = clickedButton.closest('.time-block').children().eq(1).val();
 
     // localStorage.setItem(entryTime, JSON.stringify(entryDetails))
-    console.log(entryTime)
+    console.log(entryDetails)
 }
 // Listener for click events on save button
 saveIcons.on('click', saveEventEntry)
