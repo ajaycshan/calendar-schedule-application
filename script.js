@@ -37,18 +37,17 @@ function colourCode() {
 function saveEventEntry(event) {
     // event.preventDefault();
     var clickedButton = $(event.target);
-    var entryBlock = clickedButton.closest('.time-block')
+    var entryBlock = clickedButton.closest('.time-block');
     var entryTime = entryBlock.attr('id');
     var entryDetails = entryBlock.children().eq(1).val();
 
-    // localStorage.setItem(entryTime, JSON.stringify(entryDetails))
-    console.log(entryDetails)
+    localStorage.setItem(entryTime, JSON.stringify(entryDetails));
+    console.log(entryTime)
 }
-// Listener for click events on save button
+// Listener for click events on save icons
 saveIcons.on('click', saveEventEntry)
 
 // TODO: Persistence of results following refresh for given day
-
 // TODO: Clear local storage and reset calendar display when starting new day
 
 
