@@ -9,7 +9,7 @@ var currentHour = today.format('H')
 // Display current day at top of calendar
 currentDayEl.text(currentDate);
 
-// TODO: Colour-code past, present, future - 
+// TODO: Colour-code past, present, future
 
 // TODO: Saving events to local storage
 // Listener for click events on save button
