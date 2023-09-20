@@ -23,14 +23,11 @@ function colourCode() {
     console.log(calHour)
     if (currentHour > calHour) {
         // Adds 'past' class to textarea element for specific hour
-        // indivTextareaEl.addClass('past');
         indivTextareaEl.classList.add('past')
     } else if (currentHour === calHour) {
         // Adds 'present class to textarea element for specific hour
-        // indivTextareaEl.addClass('present');
         indivTextareaEl.classList.add('present')
     } else if (currentHour < calHour) {
-        // indivTextareaEl.addClass('future');
         indivTextareaEl.classList.add('future')
     };
 }
