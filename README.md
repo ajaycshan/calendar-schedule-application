@@ -16,4 +16,4 @@ The purpose of this project is to create a calendar schedule application which a
 ![Webpage Screenshot 2](images/calendar-schedule-2.png)
 
 ## Link to Deployed Application
-[Deployed Webpage](https://ajaycshan.github.io/password-generator/)
+[Deployed Webpage](https://ajayshans.github.io/calendar-schedule-application/)
